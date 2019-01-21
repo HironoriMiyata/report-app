@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            <EditText
+                    android:id="@+id/workName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="件名"
+                    android:inputType="textPersonName"/>
+
+            <Switch
+                    android:id="@+id/autoInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自動入力"/>
+
+            <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="作業者名"
+                    android:inputType="textPersonName"/>
+
+            <EditText
+                    android:id="@+id/editMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="送り先アドレス"
+                    android:inputType="textEmailAddress"/>
+
+
+            <Button
+                    android:id="@+id/Departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="出発"/>
+
+            <Button
+                    android:id="@+id/StartWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="作業開始"/>
+
+            <Button
+                    android:id="@+id/EndWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="作業終了"/>
+
+            <Button
+                    android:id="@+id/GoingHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="帰宅"/>
+
+            <Button
+                    android:id="@+id/go"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="送信"/>
+
+            <Switch
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="定型分挿入"/>
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <EditText
+                        android:id="@+id/showMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="メールの内容"/>
+            </ScrollView>
+            <Space android:layout_width="match_parent"
+                   android:layout_height="60dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
